@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">testKolsa</string>
+    <string name="warmup">Разминка</string>
+    <string name="cardio">Кардио</string>
+    <string name="hint_time">5 минут</string>
+    <string name="description_hint">Работа по таймеру, выполнять 3 круга, каждое упражнение по 30 секунд</string>
+    <string name="cardio_1">Кардио</string>
+    <string name="straing">Силовые</string>
+    <string name="stretching">Растяжка</string>
+    <string name="yoga">Йога</string>
+    <string name="box">Бокс</string>
+    <string name="minute">%1$s минут</string>
+    <string name="back">back</string>
+    <string name="playbutton">playButton</string>
+</resources>

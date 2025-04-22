@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/NavHostFragment"
+    app:startDestination="@id/list_training">
+
+    <fragment
+        android:id="@+id/list_training"
+        android:name="com.example.testkolsa.presentation.traininglist.TrainingListFragment"
+        tools:layout="@layout/fragment_training"
+        android:label="HomeFragment">
+
+        <action
+            android:id="@+id/action_list_training_to_current_fragment_training"
+            app:destination="@id/current_fragment_training"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/list_training"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/current_fragment_training"
+        android:name="com.example.testkolsa.presentation.currenttraining.CurrentTrainingFragment"
+        android:label="DetailReviewFragment"
+        tools:layout="@layout/fragment_current_training">
+
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
+</navigation>
